@@ -155,15 +155,6 @@ def min_value(root):
     return current.key
 
 
-def min_value(root):
-    current = root
-
-    while current.left is not None:
-        current = current.left
-
-    return current.key
-
-
 def sum_tree_values(root):
     if root:
         return root.key + sum_tree_values(root.left) + sum_tree_values(root.right)
